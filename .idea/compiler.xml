@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Automation Project - Udacity" />
+        <module name="e-commerceAutomationProject" />
         <module name="final_project_report" />
         <module name="Appium_test_suite" />
         <module name="Appium_test_suites" />

@@ -15,8 +15,6 @@ import io.cucumber.testng.CucumberOptions;
         dryRun = false,
         tags = "@smoke"
 )
-
-
 public class TestRunner extends AbstractTestNGCucumberTests{
 
 }

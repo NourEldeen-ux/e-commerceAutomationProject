@@ -14,10 +14,10 @@ public class ResetPasswordPage extends PageBase{
     WebElement loginButton;
 
     @FindBy(linkText = "Forgot password?")
-    WebElement forgetpassword;
+    WebElement forgetPassword;
 
     @FindBy(id = "Email")
-    WebElement emailfield;
+    WebElement emailField;
 
     @FindBy(xpath = "//button[@name=\"send-email\"]")
     WebElement recoverBtn;
@@ -25,10 +25,18 @@ public class ResetPasswordPage extends PageBase{
     public void resetPassword(String email){
 
         loginButton.click();
-        forgetpassword.click();
-        emailfield.sendKeys(email);
+        forgetPassword.click();
+        emailField.sendKeys(email);
         recoverBtn.click();
+    }
 
+
+    public void enterEmail(String email){
+        emailField.sendKeys(email);
+    }
+
+    public void clickOnRecoverBtn(){
+        recoverBtn.click();
     }
 
 }

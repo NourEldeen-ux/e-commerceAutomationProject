@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
-public class searchStepDefinitions {
+public class SearchStepDefinition {
 
     // Don't forget to apply POM Design Pattern
 

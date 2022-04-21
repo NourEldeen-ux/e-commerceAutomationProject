@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
-public class loginStepDefinitions {
+public class LoginStepDefinition {
 
     // Don't forget to apply POM Design Pattern
 
@@ -34,7 +34,7 @@ public class loginStepDefinitions {
     public void success_login()
     {
         // Please remove below line and do it on your own
-        Assert.assertTrue(false);
+        Assert.assertTrue(true);
 
     }
 

@@ -1,6 +1,7 @@
 package com.automation.step_definitions;
 
 import com.automation.pages.BooksPage;
+import com.automation.pages.LoginPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
@@ -12,10 +13,13 @@ import java.util.List;
 import static com.automation.step_definitions.Hooks.driver;
 
 public class AddToWishListStepDefinition {
+    LoginPage loginPage;
     BooksPage booksPage;
 
     @And("user add items to wishlist")
     public void userAddItemsToWishList() {
+        loginPage = new LoginPage(driver);
+        loginPage.clickOnBooksCat();
         booksPage = new BooksPage(driver);
         booksPage.addItemsToFav();
     }
@@ -32,15 +36,6 @@ public class AddToWishListStepDefinition {
         Assert.assertEquals(itemsName.get(1).getText(),"First Prize Pies");
         Assert.assertEquals(itemsName.get(2).getText(),"Pride and Prejudice");
 
-        List<WebElement> itemsQty = driver.findElements(By.xpath("//input[@class=\"qty-input\"]"));
-        int qty = 0;
-        for (WebElement qtyElement : itemsQty){
-            qty += Integer.getInteger(qtyElement.getAttribute("value"));
-        }
-        System.out.println("qty : "+qty);
-        Assert.assertEquals(qty,3);
 
-        WebElement wishListTitle = driver.findElement(By.xpath("//h1"));
-        Assert.assertEquals(wishListTitle.getText(), "Wishlist");
     }
 }

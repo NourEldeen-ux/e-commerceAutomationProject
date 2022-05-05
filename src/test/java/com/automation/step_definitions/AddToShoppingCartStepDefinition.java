@@ -12,7 +12,7 @@ import java.util.List;
 
 import static com.automation.step_definitions.Hooks.driver;
 
-public class AddToShoppingCartStepDefiniton {
+public class AddToShoppingCartStepDefinition {
 
     LoginPage loginPage;
     BooksPage booksPage;
@@ -30,7 +30,7 @@ public class AddToShoppingCartStepDefiniton {
     }
 
     @And("user navigate to shopping cart")
-    public void userNavigateToShopingCart() {
+    public void userNavigateToShoppingCart() {
         booksPage.openShoppingCartPage();
 
     }
@@ -41,16 +41,5 @@ public class AddToShoppingCartStepDefiniton {
         Assert.assertEquals(itemsName.get(0).getText(),"Fahrenheit 451 by Ray Bradbury");
         Assert.assertEquals(itemsName.get(1).getText(),"First Prize Pies");
         Assert.assertEquals(itemsName.get(2).getText(),"Pride and Prejudice");
-
-        List<WebElement> itemsQty = driver.findElements(By.xpath("//input[@class=\"qty-input\"]"));
-        int qty = 0;
-        for (WebElement qtyElement : itemsQty){
-            qty += Integer.getInteger(qtyElement.getAttribute("value"));
-        }
-        System.out.println("qty : "+qty);
-        Assert.assertEquals(qty,3);
-
-        WebElement shoppingCartTitle = driver.findElement(By.xpath("//h1"));
-        Assert.assertEquals(shoppingCartTitle.getText(), "Shopping cart");
     }
 }

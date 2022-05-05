@@ -30,7 +30,7 @@ public class RegistrationStepDefinition {
 
     @And("user entered first name")
     public void enterFirstName(){
-        registerPage.setFirstName("NourElden");
+        registerPage.setFirstName("NourEldeen");
     }
     @And("user entered last name")
     public void enterLastName(){
@@ -46,7 +46,7 @@ public class RegistrationStepDefinition {
 
     @And("user entered email for registration")
     public void enterEmail(){
-        registerPage.setEmail("nour@test.com");
+        registerPage.setEmail("noureldeen@test.com");
     }
     @And("user entered company name")
     public void enterCompanyName(){

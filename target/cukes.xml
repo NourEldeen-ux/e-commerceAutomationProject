@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="9" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="124.561">
-    <testcase classname="User registration" name="SC1- User could register with valid data" time="16.686">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;result&quot;]&quot;}&#10;  (Session info: chrome=100.0.4896.75)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f19447b0c6103f14413e1104303d76a5, findElement {using=xpath, value=//div[@class=&quot;result&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52862/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f19447b0c6103f14413e1104303d76a5" type="org.openqa.selenium.NoSuchElementException"><![CDATA[And user clicked on register link...........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="120.966">
+    <testcase classname="User registration" name="SC1- User could register with valid data" time="6.183">
+        <system-out><![CDATA[And user clicked on register link...........................................passed
 When user selected gender...................................................passed
 And user entered first name.................................................passed
 And user entered last name..................................................passed
@@ -11,330 +11,75 @@ And user entered company name...............................................pass
 And user entered password for registration..................................passed
 And user confirmed password for registration................................passed
 And user clicked on register button.........................................passed
-Then user should have a success message for registration....................failed
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="result"]"}
-  (Session info: chrome=100.0.4896.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f19447b0c6103f14413e1104303d76a5, findElement {using=xpath, value=//div[@class="result"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52862/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f19447b0c6103f14413e1104303d76a5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.automation.step_definitions.RegistrationStepDefinition.userShouldHaveASuccessMessageForRegistration(RegistrationStepDefinition.java:75)
-	at ✽.user should have a success message for registration(file:///D:/Udacity%20Projects/e-commerceAutomationProject/src/main/resources/features/F01_Registration.feature:16)
-]]></failure>
+Then user should have a success message for registration....................passed
+]]></system-out>
     </testcase>
-    <testcase classname="F01_Login | users could use login functionality to open their accounts" name="user could login with valid email and password" time="5.271">
+    <testcase classname="F01_Login | users could use login functionality to open their accounts" name="user could login with valid email and password" time="5.173">
         <system-out><![CDATA[Given user go to login page.................................................passed
-When user login with "valid" "validemail@example.com" and "P@ssw0rd"........passed
+When user login with "valid" "nourahmed@test.com" and "123456789"...........passed
 And user press on login button..............................................passed
 Then user login to the system successfully..................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="User could reset his/her password" name="SC3- User could reset his/her password successfully" time="12.108">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[normalize-space()='Forgot password?']&quot;}&#10;  (Session info: chrome=100.0.4896.75)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [9f2f59d0fc42c4e541648694d790729e, findElement {using=xpath, value=//a[normalize-space()='Forgot password?']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52916/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9f2f59d0fc42c4e541648694d790729e" type="org.openqa.selenium.NoSuchElementException"><![CDATA[And user clicked on forgot password.........................................failed
-And user entered email for reset password...................................skipped
-And user clicked on recover button..........................................skipped
-Then user should have a success message for recover.........................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Forgot password?']"}
-  (Session info: chrome=100.0.4896.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9f2f59d0fc42c4e541648694d790729e, findElement {using=xpath, value=//a[normalize-space()='Forgot password?']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52916/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9f2f59d0fc42c4e541648694d790729e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-	at com.automation.pages.LoginPage.clickForgetPassword(LoginPage.java:49)
-	at com.automation.step_definitions.ResetPasswordStepDefinition.userClickedOnForgotPassword(ResetPasswordStepDefinition.java:20)
-	at ✽.user clicked on forgot password(file:///D:/Udacity%20Projects/e-commerceAutomationProject/src/main/resources/features/F03_ResetPassword.feature:5)
-]]></failure>
+    <testcase classname="User could reset his/her password" name="SC3- User could reset his/her password successfully" time="5.45">
+        <system-out><![CDATA[And user clicked on forgot password.........................................passed
+And user entered email for reset password...................................passed
+And user clicked on recover button..........................................passed
+Then user should have a success message for recover.........................passed
+]]></system-out>
     </testcase>
-    <testcase classname="F02_Search | users will be able to search for products with different parameters" name="user could search for product using fullName" time="3.22">
+    <testcase classname="F02_Search | users will be able to search for products with different parameters" name="user could search for product using fullName" time="3.085">
         <system-out><![CDATA[When user clicks on search field............................................passed
 And user search with name of product........................................passed
 Then user could find relative results.......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Logged User could switch between currencies" name="SC5- Logged User could switch between currencies US-Euro" time="3.943">
-        <failure message="unknown error: failed to change window state to 'normal', current state is 'maximized'&#10;  (Session info: chrome=100.0.4896.75)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f9448f37fc43f2ca19fae70a99e23898, maximizeCurrentWindow {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52960}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52960/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f9448f37fc43f2ca19fae70a99e23898" type="org.openqa.selenium.WebDriverException"><![CDATA[And user change currency from usd to euro...................................failed
-Then all products shown are in euro.........................................skipped
-
-StackTrace:
-org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
-  (Session info: chrome=100.0.4896.75)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f9448f37fc43f2ca19fae70a99e23898, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52960}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52960/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f9448f37fc43f2ca19fae70a99e23898
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:613)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:984)
-	at com.automation.pages.HomePage.<init>(HomePage.java:40)
-	at com.automation.step_definitions.ChangeCurrencyStepDefinition.userChangeCurrencyFromUsdToEuro(ChangeCurrencyStepDefinition.java:19)
-	at ✽.user change currency from usd to euro(file:///D:/Udacity%20Projects/e-commerceAutomationProject/src/main/resources/features/F05_ChangeCurrency.feature:5)
-]]></failure>
+    <testcase classname="Logged User could switch between currencies" name="SC5- Logged User could switch between currencies US-Euro" time="4.356">
+        <system-out><![CDATA[And user change currency from usd to euro...................................passed
+Then all products shown are in euro.........................................passed
+]]></system-out>
     </testcase>
-    <testcase classname="Logged user could select different Categories" name="SC6- Logged user could select different Categories" time="12.255">
-        <failure message="element not interactable&#10;  (Session info: chrome=100.0.4896.75)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fe0be07ea32cb044c72dc407a43818ca, clickElement {id=7fcc27e6-a0ed-45e9-a65b-3074514c117b}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52980/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (fe0be07ea32cb044c72dc407a43818ca)] -&gt; xpath: //body/div[6]/div[2]/ul[1]/li[2]/ul[1]/li[2]/a[1]]&#10;Session ID: fe0be07ea32cb044c72dc407a43818ca" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[And user hover on electronic category.......................................passed
-And user click on cellPhone category........................................failed
-Then cell phones page should appear to the user.............................skipped
-
-StackTrace:
-org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=100.0.4896.75)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fe0be07ea32cb044c72dc407a43818ca, clickElement {id=7fcc27e6-a0ed-45e9-a65b-3074514c117b}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52980/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (fe0be07ea32cb044c72dc407a43818ca)] -> xpath: //body/div[6]/div[2]/ul[1]/li[2]/ul[1]/li[2]/a[1]]
-Session ID: fe0be07ea32cb044c72dc407a43818ca
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-	at com.automation.pages.HomePage.clickOnCellPhoneCat(HomePage.java:74)
-	at com.automation.step_definitions.SelectDifferentCategoriesStepDefinition.userClickOnCellPhoneCategory(SelectDifferentCategoriesStepDefinition.java:22)
-	at ✽.user click on cellPhone category(file:///D:/Udacity%20Projects/e-commerceAutomationProject/src/main/resources/features/F06_selectDifferentCategories.feature:6)
-]]></failure>
+    <testcase classname="Logged user could select different Categories" name="SC6- Logged user could select different Categories" time="4.331">
+        <system-out><![CDATA[And user hover on electronic category.......................................passed
+And user click on cellPhone category........................................passed
+Then cell phones page should appear to the user.............................passed
+]]></system-out>
     </testcase>
-    <testcase classname="Logged user could filter with color" name="Logged user could filter with red color" time="1.953">
-        <failure message="unknown error: cannot determine loading status&#10;from disconnected: received Inspector.detached event&#10;  (Session info: chrome=100.0.4896.75)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [e4ebede4322433aed9e05cfdfe9a3ebf, get {url=https://demo.nopcommerce.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53017}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53017/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e4ebede4322433aed9e05cfdfe9a3ebf" type="org.openqa.selenium.WebDriverException"><![CDATA[And user hover on apparel category..........................................skipped
-And user click on shoes category............................................skipped
-And user change color to red................................................skipped
-Then shoes with red color only should appear to the user....................skipped
-
-StackTrace:
-org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=100.0.4896.75)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e4ebede4322433aed9e05cfdfe9a3ebf, get {url=https://demo.nopcommerce.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53017}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53017/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e4ebede4322433aed9e05cfdfe9a3ebf
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1013)
-	at com.automation.step_definitions.Hooks.user_open_chrome_browser(Hooks.java:21)
-]]></failure>
+    <testcase classname="Logged user could filter with color" name="Logged user could filter with red color" time="3.004">
+        <system-out><![CDATA[And user hover on apparel category..........................................passed
+And user click on shoes category............................................passed
+And user change color to red................................................passed
+Then shoes with red color only should appear to the user....................passed
+]]></system-out>
     </testcase>
-    <testcase classname="SC8- Logged user could select different tags" name="Logged user could select awesome tag" time="3.565">
+    <testcase classname="SC8- Logged user could select different tags" name="Logged user could select awesome tag" time="5.407">
         <system-out><![CDATA[And user open search page...................................................passed
 And user choose awesome tag.................................................passed
 Then awesome products page should appear to the user........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="SC9- Logged user could add different products to Shopping cart" name="Logged user could add different products to Shopping cart" time="3.106">
-        <failure message="unknown error: failed to change window state to 'normal', current state is 'maximized'&#10;  (Session info: chrome=100.0.4896.75)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [45d437dbde6cd5adad9d1d1f193f2cfd, maximizeCurrentWindow {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53055}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53055/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 45d437dbde6cd5adad9d1d1f193f2cfd" type="org.openqa.selenium.WebDriverException"><![CDATA[And user navigate to books pages............................................passed
-And user add items to shopping cart.........................................failed
-And user navigate to shopping cart..........................................skipped
-Then added items should appear at shopping cart.............................skipped
-
-StackTrace:
-org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
-  (Session info: chrome=100.0.4896.75)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [45d437dbde6cd5adad9d1d1f193f2cfd, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53055}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53055/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 45d437dbde6cd5adad9d1d1f193f2cfd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:613)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:984)
-	at com.automation.pages.BooksPage.<init>(BooksPage.java:28)
-	at com.automation.step_definitions.AddToShoppingCartStepDefiniton.userAddItemsToShoppingCart(AddToShoppingCartStepDefiniton.java:28)
-	at ✽.user add items to shopping cart(file:///D:/Udacity%20Projects/e-commerceAutomationProject/src/main/resources/features/F09_addDifferentProductsToShoppingCart.feature:8)
-]]></failure>
-    </testcase>
-    <testcase classname="SC9- Logged user could add different products to wishlist" name="Logged user could add different products to wishlist" time="7.165">
-        <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=100.0.4896.75)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c37c44e8a5677ddcfd77e3d083c49ce4, clickElement {id=01161080-bb0d-4020-b597-44519cccfdfb}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53076}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53076/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[[[ChromeDriver: chrome on WINDOWS (c37c44e8a5677ddcfd77e3d083c49ce4)] -&gt; xpath: //div[@class=&quot;product-item&quot;]]] -&gt; xpath: //button[@class=&quot;button-2 add-to-wishlist-button&quot;]]&#10;Session ID: c37c44e8a5677ddcfd77e3d083c49ce4" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[And user add items to wishlist..............................................failed
-And user navigate to wishlist...............................................skipped
-Then added items should appear at wishlist..................................skipped
-
-StackTrace:
-org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=100.0.4896.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c37c44e8a5677ddcfd77e3d083c49ce4, clickElement {id=01161080-bb0d-4020-b597-44519cccfdfb}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53076}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53076/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on WINDOWS (c37c44e8a5677ddcfd77e3d083c49ce4)] -> xpath: //div[@class="product-item"]]] -> xpath: //button[@class="button-2 add-to-wishlist-button"]]
-Session ID: c37c44e8a5677ddcfd77e3d083c49ce4
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at com.automation.pages.BooksPage.addItemsToFav(BooksPage.java:47)
-	at com.automation.step_definitions.AddToWishListStepDefinition.userAddItemsToWishList(AddToWishListStepDefinition.java:20)
-	at ✽.user add items to wishlist(file:///D:/Udacity%20Projects/e-commerceAutomationProject/src/main/resources/features/F10_addDifferentProductsToWhishList.feature:5)
-]]></failure>
-    </testcase>
-    <testcase classname="SC9- Logged user could add different products to compare list" name="Logged user could add different products to compare list" time="23.551">
-        <failure message="expected [Fahrenheit 451 by Ray Bradbury] but found [$25 Virtual Gift Card]" type="java.lang.AssertionError"><![CDATA[And user add items to compare list..........................................passed
-And user navigate to compare list...........................................passed
-Then added items should appear at compare list..............................failed
-
-StackTrace:
-java.lang.AssertionError: expected [Fahrenheit 451 by Ray Bradbury] but found [$25 Virtual Gift Card]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.automation.step_definitions.AddToCompareListStepDefinition.addedItemsShouldAppearAtCompareList(AddToCompareListStepDefinition.java:35)
-	at ✽.added items should appear at compare list(file:///D:/Udacity%20Projects/e-commerceAutomationProject/src/main/resources/features/F11_addDifferentProductsToCompareList.feature:8)
-]]></failure>
-    </testcase>
-    <testcase classname="SC12- Create successful Order" name="Create successful Order" time="31.356">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#BillingNewAddress_CountryId&quot;}&#10;  (Session info: chrome=100.0.4896.75)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [af0c3e2fd6fd3191ec041f470d856f1c, findElement {using=id, value=BillingNewAddress_CountryId}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53135/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: af0c3e2fd6fd3191ec041f470d856f1c" type="org.openqa.selenium.NoSuchElementException"><![CDATA[And user navigate to books pages............................................passed
+    <testcase classname="SC9- Logged user could add different products to Shopping cart" name="Logged user could add different products to Shopping cart" time="19.177">
+        <system-out><![CDATA[And user navigate to books pages............................................passed
 And user add items to shopping cart.........................................passed
 And user navigate to shopping cart..........................................passed
-And user complete order.....................................................failed
-Then order placed successfully..............................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#BillingNewAddress_CountryId"}
-  (Session info: chrome=100.0.4896.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'METRO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [af0c3e2fd6fd3191ec041f470d856f1c, findElement {using=id, value=BillingNewAddress_CountryId}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\metro\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53135/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: af0c3e2fd6fd3191ec041f470d856f1c
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:46)
-	at com.automation.pages.ShoppingCart.completeOrder(ShoppingCart.java:42)
-	at com.automation.step_definitions.CreateSuccessfulOrderStepDefinition.userCompleteOrder(CreateSuccessfulOrderStepDefinition.java:18)
-	at ✽.user complete order(file:///D:/Udacity%20Projects/e-commerceAutomationProject/src/main/resources/features/F12_createSuccessfulOrder.feature:8)
-]]></failure>
+Then added items should appear at shopping cart.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="SC9- Logged user could add different products to wishlist" name="Logged user could add different products to wishlist" time="25.605">
+        <system-out><![CDATA[And user add items to wishlist..............................................passed
+And user navigate to wishlist...............................................passed
+Then added items should appear at wishlist..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="SC9- Logged user could add different products to compare list" name="Logged user could add different products to compare list" time="23.642">
+        <system-out><![CDATA[And user add items to compare list..........................................passed
+And user navigate to compare list...........................................passed
+Then added items should appear at compare list..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="SC12- Create successful Order" name="Create successful Order" time="15.214">
+        <system-out><![CDATA[And user complete order.....................................................passed
+Then order placed successfully..............................................passed
+]]></system-out>
     </testcase>
 </testsuite>

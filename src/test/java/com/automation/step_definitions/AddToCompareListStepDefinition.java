@@ -1,6 +1,7 @@
 package com.automation.step_definitions;
 
 import com.automation.pages.BooksPage;
+import com.automation.pages.LoginPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
@@ -13,10 +14,12 @@ import static com.automation.step_definitions.Hooks.driver;
 
 public class AddToCompareListStepDefinition {
     BooksPage booksPage;
-
+    LoginPage loginPage;
 
     @And("user add items to compare list")
     public void userAddItemsToCompareList() {
+        loginPage = new LoginPage(driver);
+        loginPage.clickOnBooksCat();
         booksPage = new BooksPage(driver);
         booksPage.addItemsToCompare();
     }

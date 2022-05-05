@@ -1,5 +1,6 @@
 package com.automation.step_definitions;
 
+import com.automation.pages.CreateOrderPage;
 import com.automation.pages.ShoppingCart;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -11,19 +12,22 @@ import static com.automation.step_definitions.Hooks.driver;
 
 public class CreateSuccessfulOrderStepDefinition {
     ShoppingCart shoppingCart;
+    CreateOrderPage createOrderPage;
 
     @And("user complete order")
-    public void userCompleteOrder() {
+    public void userCompleteOrder() throws InterruptedException {
         shoppingCart = new ShoppingCart(driver);
-        shoppingCart.completeOrder();
+        createOrderPage = new CreateOrderPage(driver);
+        createOrderPage.checkout();
+        createOrderPage.billingAddressInput("NourEldeen", "Ahmed", "noureldeenahmed9@gmail.com", "test", "Egypt", "Cairo", "0", "address1", "address2", "12345", "01234567890", "12345678");
+        createOrderPage.shippingMethodInput("Ground");
+        createOrderPage.paymentMethodInput("Check");
+        createOrderPage.checkPaymentInfoInput();
+        createOrderPage.confirmOrder();
     }
 
     @Then("order placed successfully")
     public void orderPlacedSuccessfully() {
-        WebElement orderTitle = driver.findElement(By.xpath("//h1"));
-        Assert.assertEquals(orderTitle.getText(), "Thank you");
-
-        String url = "https://demo.nopcommerce.com/checkout/completed";
-        Assert.assertEquals(driver.getCurrentUrl(),url);
+        Assert.assertEquals(createOrderPage.getSuccessfulOrderMsg().getText(), "Your order has been successfully processed!", "Successful checkout");
     }
 }

@@ -1,9 +1,0 @@
-file:src/main/resources/features/F09_addDifferentProductsToShoppingCart.feature:7
-file:src/main/resources/features/F10_addDifferentProductsToWhishList.feature:4
-file:src/main/resources/features/F07_filterWithColor.feature:5
-file:src/main/resources/features/F03_ResetPassword.feature:4
-file:src/main/resources/features/F05_ChangeCurrency.feature:4
-file:src/main/resources/features/F06_selectDifferentCategories.feature:4
-file:src/main/resources/features/F11_addDifferentProductsToCompareList.feature:4
-file:src/main/resources/features/F12_createSuccessfulOrder.feature:10
-file:src/main/resources/features/F01_Registration.feature:6

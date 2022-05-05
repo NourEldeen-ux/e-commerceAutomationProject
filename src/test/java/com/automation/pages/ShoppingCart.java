@@ -42,7 +42,7 @@ public class ShoppingCart {
         Select countrySelect = new Select(country);
         countrySelect.selectByValue("Egypt");
         city.sendKeys("Alexandria");
-        address1.sendKeys("Alex,Build1");
+        address1.sendKeys("Alex,Build");
         postalCode.sendKeys("123456");
         phone.sendKeys("0123456789");
         continue2ndStep.click();

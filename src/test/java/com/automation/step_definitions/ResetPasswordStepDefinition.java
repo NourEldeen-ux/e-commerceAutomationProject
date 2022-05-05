@@ -17,13 +17,14 @@ public class ResetPasswordStepDefinition {
     @And("user clicked on forgot password")
     public void userClickedOnForgotPassword() {
         loginPage = new LoginPage(driver);
+        loginPage.clickLogIn();
         loginPage.clickForgetPassword();
     }
 
     @And("user entered email for reset password")
     public void userEnteredEmailForResetPassword() {
         resetPasswordPage = new ResetPasswordPage(driver);
-        resetPasswordPage.enterEmail("Ahmed@service.com");
+        resetPasswordPage.enterEmail("noureldeen@test.com");
     }
 
     @And("user clicked on recover button")
